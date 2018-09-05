@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg style="visibility:hidden;" width="0" height="0"> 
+    <filter id="duotone" color-interpolation-filters="sRGB">         <feColorMatrix type="matrix" values="0.7 0 0 0 0.3 0.6 0 0 0 0.2 0.3 0 0 0 0.6 0 0 0 1 0"></feColorMatrix> 
+    </filter>
+  </svg>
+  
+  <div class="flex-contatiner">
+      <div class="calendar-container">
+          <div class="calendar">
+              <table class="calendar-table">
+                <thead>
+                  <tr><th>do.</th><th>lu.</th><th>ma.</th><th>mi.</th><th>ju.</th><th>vi.</th><th>sá.</th></tr>
+                </thead>
+                <tbody id="js-calendar-body"></tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</html>
